@@ -1,5 +1,5 @@
-
+//PROJECT FOR GIT HUB
 fn main() {
-    println!("Hello, world!");
+    println!("Hello, GIT!");
     
 }
