@@ -1,3 +1,4 @@
+// I LEARN RUST FROM https://www.youtube.com/watch?v=OX9HJsJUDxA&list=PLai5B987bZ9CoVR-QEIN9foz4QCJ0H2Y8&index=2
 use std::io::{self, Write};
 use reqwest::blocking::Client;
 use serde_json::Value;
@@ -29,6 +30,7 @@ fn main() {
         .send()
         .unwrap();
 
+        
     if response.status().is_success() {
         let repos: Value = response.json().unwrap();
         for repo in repos.as_array().unwrap() {
